@@ -123,7 +123,7 @@ joblib.dump(le_headache, 'le_headache.pkl')
 joblib.dump(le_measure, 'le_measure.pkl')
 
 # Step 3: Fetch real-time weather data
-def get_weather_data(city, api_key="86273290d39a27d89c32c209066633ba", fallback_city="Nairobi"):
+def get_weather_data(city, api_key="your weather API key", fallback_city="Nairobi"):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     
     # Set up retry strategy
